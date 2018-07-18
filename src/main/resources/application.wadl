@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:application
+	xmlns:ns0="http://wadl.dev.java.net/2009/02"
+	xmlns:super="http://superbooks">
+	<ns0:doc xmlns:ns1="http://jersey.java.net/"
+		ns1:generatedBy="Jersey: 2.22.4 2016-11-30 13:33:53" />
+	<ns0:doc xmlns:ns2="http://jersey.java.net/"
+		ns2:hint="This is simplified WADL with user and core resources only. To get full WADL with extended resources use the query parameter detail. Link: http://localhost:7001/simple-service-webapp/webapi/application.wadl?detail=true" />
+	<ns0:grammars>
+		<ns0:include href="xsd0.xsd" />
+	</ns0:grammars>
+	<ns0:resources
+		base="http://localhost:7001/simple-service-webapp/">
+		<ns0:resource path="myresource">
+			<ns0:method id="getIt" name="GET">
+				<ns0:response>
+					<ns0:representation mediaType="text/plain" />
+				</ns0:response>
+			</ns0:method>
+			<ns0:resource path="/persons/{person-name}">
+				<ns0:param name="person-name" style="template"
+					xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="xsd:string" />
+				<ns0:method id="getPerson" name="GET">
+					<ns0:response>
+						<ns0:representation element="super:person"
+							mediaType="application/json" />
+					</ns0:response>
+				</ns0:method>
+			</ns0:resource>
+		</ns0:resource>
+	</ns0:resources>
+</ns0:application>

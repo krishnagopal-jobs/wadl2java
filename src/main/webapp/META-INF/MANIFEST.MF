@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Class-Path: jaxb-api-2.2.11.jar jaxb-core-2.2.11.jar jaxb-impl-2.2.11.
+ jar activation-1.1.1.jar cxf-rt-frontend-jaxrs-3.2.5.jar cxf-core-3.2
+ .5.jar woodstox-core-5.0.3.jar stax2-api-3.1.4.jar xmlschema-core-2.2
+ .3.jar javax.ws.rs-api-2.1.jar javax.annotation-api-1.3.jar cxf-rt-tr
+ ansports-http-3.2.5.jar cxf-rt-rs-client-3.2.5.jar jackson-core-asl-1
+ .8.6.jar jackson-mapper-asl-1.8.6.jar jackson-jaxrs-1.8.6.jar spring-
+ web-4.3.18.RELEASE.jar spring-aop-4.3.18.RELEASE.jar spring-beans-4.3
+ .18.RELEASE.jar spring-core-4.3.18.RELEASE.jar commons-logging-1.2.ja
+ r spring-context-4.3.18.RELEASE.jar spring-expression-4.3.18.RELEASE.
+ jar
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns:super="http://superbooks" targetNamespace="http://superbooks">
+	<xsd:complexType name="Person">
+		<xsd:sequence>
+			<xsd:element name="firstName" type="xsd:string"
+				minOccurs="0" />
+			<xsd:element name="lastName" type="xsd:string"
+				minOccurs="0" />
+			<xsd:element name="dateOfBirth" type="xsd:date"
+				minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="person" type="super:Person" />
+</xsd:schema>
